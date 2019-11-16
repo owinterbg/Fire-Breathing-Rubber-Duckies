@@ -1,0 +1,48 @@
+low,gaming,RAM,Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 Memory,$64.98
+low,gaming,CPU,Intel Core i5-9600KF 3.7 GHz 6-Core Processor,$194.99
+low,gaming,Graphics Card,MSI GeForce GTX 1660 Super 6 GB VENTUS XS OC Video Card,$229.99
+low,gaming,Power Supply,EVGA BQ 600 W 80+ Bronze Certified Semi-modular ATX Power Supply,$55.98
+low,gaming,Case,Phanteks P300 ATX Mid Tower Case,$59.98
+low,gaming,Motherboard,MSI B360 GAMING PLUS ATX LGA1151 Motherboard,$89.99
+low,gaming,SSD,"Samsung 860 Evo 250 GB 2.5"" Solid State Drive",$51.99
+low,gaming,HDD,"Seagate BarraCuda 1 TB 3.5"" 7200RPM Internal Hard Drive",$43.99
+med,gaming,RAM,Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 Memory,$64.98
+med,gaming,CPU,Intel Core i7-9700K 3.6 GHz 8-Core Processor,$339.99
+med,gaming,Graphics Card,MSI GeForce RTX 2060 SUPER 8 GB VENTUS OC Video Card,$389.99
+med,gaming,Power Supply,EVGA BQ 750 W 80+ Bronze Certified Semi-modular ATX Power Supply,$65.98
+med,gaming,Case,Phanteks Eclipse P400S ATX Mid Tower Case,$89.99
+med,gaming,Motherboard,MSI MPG Z390 GAMING PLUS ATX LGA1151 Motherboard,$137.00
+med,gaming,SSD,"Samsung 860 Evo 500 GB 2.5"" Solid State Drive",$79.98
+med,gaming,HDD,"Seagate Barracuda 2 TB 3.5"" 7200RPM Internal Hard Drive",$64.99
+high,gaming,RAM,Corsair Vengeance LPX 32 GB (4 x 8 GB) DDR4-3000 Memory,$140.33+
+high,gaming,CPU,Intel Core i9-9900K 3.6 GHz 8-Core Processor,$471.99
+high,gaming,Graphics Card,MSI GeForce RTX 2080 Ti 11 GB VENTUS OC Video Card,$1049.99
+high,gaming,Power Supply,EVGA BQ 850 W 80+ Bronze Certified Semi-modular ATX Power Supply,$99.99+
+high,gaming,Case,Phanteks ECLIPSE P600S ATX Mid Tower Case,$144.99
+high,gaming,Motherboard,MSI MPG Z390 GAMING EDGE AC ATX LGA1151 Motherboard,$164.52
+high,gaming,SSD,"Samsung 860 Evo 1 TB 2.5"" Solid State Drive",$139.99
+high,gaming,HDD,"Seagate BarraCuda Pro 4 TB 3.5"" 7200RPM Internal Hard Drive",$127.46
+low,workstation,RAM,Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 Memory,$64.98
+low,workstation,CPU,AMD Ryzen 5 3600 3.6 GHz 6-Core Processor,$194.00
+low,workstation,Graphics Card,MSI GeForce GTX 1660 Super 6 GB VENTUS XS OC Video Card,$229.99
+low,workstation,Power Supply,EVGA BQ 600 W 80+ Bronze Certified Semi-modular ATX Power Supply,$55.98
+low,workstation,Case,Phanteks P300 ATX Mid Tower Case,$59.98
+low,workstation,Motherboard,ASRock B450 Steel Legend ATX AM4 Motherboard,$79.99
+low,workstation,SSD,"Samsung 860 Evo 250 GB 2.5"" Solid State Drive",$51.99
+low,workstation,HDD,"Seagate BarraCuda 1 TB 3.5"" 7200RPM Internal Hard Drive",$43.99
+med,workstation,RAM,Corsair Vengeance LPX 32 GB (4 x 8 GB) DDR4-3000 Memory,$140.33+
+med,workstation,CPU,AMD Ryzen 7 3700X 3.6 GHz 8-Core Processor,$326.99
+med,workstation,Graphics Card,MSI GeForce RTX 2060 SUPER 8 GB VENTUS OC Video Card,$389.99
+med,workstation,Power Supply,EVGA BQ 750 W 80+ Bronze Certified Semi-modular ATX Power Supply,$65.98
+med,workstation,Case,Phanteks Eclipse P400S ATX Mid Tower Case,$89.99
+med,workstation,Motherboard,ASRock X570 Phantom Gaming 4 ATX AM4 Motherboard,$114.99
+med,workstation,SSD,"Samsung 860 Evo 500 GB 2.5"" Solid State Drive",$79.98
+med,workstation,HDD,"Seagate Barracuda 2 TB 3.5"" 7200RPM Internal Hard Drive",$64.99
+high,workstation,RAM,Corsair Vengeance LPX 64 GB (4 x 16 GB) DDR4-3000 Memory,$272.99
+high,workstation,CPU,AMD Ryzen 9 3900X 3.8 GHz 12-Core Processor,$499.99+
+high,workstation,Graphics Card,MSI GeForce RTX 2080 Ti 11 GB VENTUS OC Video Card,$1049.99
+high,workstation,Power Supply,EVGA BQ 850 W 80+ Bronze Certified Semi-modular ATX Power Supply,$99.99+
+high,workstation,Case,Phanteks ECLIPSE P600S ATX Mid Tower Case,$144.99
+high,workstation,Motherboard,ASRock X570 Steel Legend ATX AM4 Motherboard,$159.99
+high,workstation,SSD,"Samsung 860 Evo 1 TB 2.5"" Solid State Drive",$139.99
+high,workstation,HDD,"Seagate BarraCuda Pro 4 TB 3.5"" 7200RPM Internal Hard Drive",$127.46

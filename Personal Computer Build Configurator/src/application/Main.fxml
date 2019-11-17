@@ -7,7 +7,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextArea layoutX="200.0" layoutY="31.0" prefHeight="100.0" prefWidth="400.0" text="PC Part Builder">
@@ -15,5 +14,6 @@
             <Font size="48.0" />
          </font>
       </TextArea>
+      <ChoiceBox layoutX="468.0" layoutY="233.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

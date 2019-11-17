@@ -7,13 +7,37 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <TextArea layoutX="200.0" layoutY="31.0" prefHeight="100.0" prefWidth="400.0" text="PC Part Builder">
          <font>
             <Font size="48.0" />
          </font>
       </TextArea>
-      <ChoiceBox layoutX="468.0" layoutY="233.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="firstChoice" layoutX="468.0" layoutY="233.0" prefWidth="150.0" />
+      	<Items>
+      		<FXCollections fx:factory="observableArrayList">
+      		<String fx.value="High" />
+      		<String fx.value="Medium"/>
+      		<String fx.value="Low" />
+      		</FXCollections>
+      	</Items>
+      <ChoiceBox fx:id="secondChoice" layoutX="468.0" layoutY="300.0" prefWidth="150.0" />
+      <Items>
+      		<FXCollections fx:factory="observableArrayList">
+      		<String fx.value="High" />
+      		<String fx.value="Medium"/>
+      		<String fx.value="Low" />
+      		</FXCollections>
+      	</Items>
+      <ChoiceBox fx:id="thirdChoice" layoutX="462.0" layoutY="369.0" prefWidth="150.0" />
+      <Items>
+      		<FXCollections fx:factory="observableArrayList">
+      		<String fx.value="High" />
+      		<String fx.value="Medium"/>
+      		<String fx.value="Low" />
+      		</FXCollections>
+      	</Items>
+      <Button layoutX="497.0" layoutY="514.0" mnemonicParsing="false" onAction="#handle" text="Button" />
    </children>
 </AnchorPane>

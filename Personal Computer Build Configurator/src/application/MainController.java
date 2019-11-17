@@ -13,10 +13,17 @@ public class MainController {
 	@FXML
 	private ChoiceBox<String> secondChoice;
 	@FXML
-	private ChoiceBox<String> thirdBox;
+	private ChoiceBox<String> thirdChoice;
+	
+	public void start()
+	{
+		
+	}
 	
 	public void handle(ActionEvent handle) throws IOException
 	{
+		
+		
 		
 	}
 

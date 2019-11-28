@@ -24,9 +24,9 @@ public class MainController {
 	
 	@FXML
 	public void initialize() {
-	 	comboBox1.getItems().addAll("High", "Medium", "Low");
-	 	comboBox2.getItems().addAll("High", "Medium", "Low");
-	 	comboBox3.getItems().addAll("High", "Medium", "Low");
+	 	comboBox1.getItems().addAll("Gaming", "Work");
+	 	comboBox2.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
+	 	comboBox3.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 
 	}
 
@@ -38,6 +38,7 @@ public class MainController {
 		String answerBox3 = comboBox3.getValue();
 		
 		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3);
+		
 		
 	}
 	

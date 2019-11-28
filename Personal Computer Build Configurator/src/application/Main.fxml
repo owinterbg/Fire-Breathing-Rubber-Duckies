@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -10,15 +11,30 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <TextArea layoutX="100.0" layoutY="27.0" prefHeight="100.0" prefWidth="400.0" text="PC Part Builder">
+      <Label layoutX="177.0" layoutY="36.0" prefHeight="96.0" prefWidth="241.0" text="PC Part Picker">
          <font>
-            <Font size="48.0" />
+            <Font size="36.0" />
          </font>
-      </TextArea>
-      <Button layoutX="415.0" layoutY="510.0" mnemonicParsing="false" onAction="#handle" text="Save Choices" />
-      <ComboBox fx:id="comboBox1" layoutX="375.0" layoutY="224.0" prefWidth="150.0" />
-      <ComboBox fx:id="comboBox2" layoutX="375.0" layoutY="296.0" prefWidth="150.0" />
-      <ComboBox fx:id="comboBox3" layoutX="375.0" layoutY="373.0" prefWidth="150.0" />
-      <Button layoutX="417.0" layoutY="593.0" mnemonicParsing="false" onAction="#changeToSecondScene" prefHeight="27.0" prefWidth="93.0" text="Next Page" />
+      </Label>
+      <SplitPane dividerPositions="0.47474747474747475" layoutX="15.0" layoutY="109.0" prefHeight="473.0" prefWidth="522.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="195.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="74.0" prefHeight="51.0" prefWidth="233.0" text="What will you be using this computer for?" />
+                  <Label layoutX="6.0" layoutY="167.0" prefHeight="17.0" prefWidth="233.0" text="What PC part is most important to you?" />
+                  <Label layoutX="8.0" layoutY="244.0" prefHeight="17.0" prefWidth="233.0" text="What PC part is least important to you?" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="220.0">
+               <children>
+                  <ComboBox fx:id="comboBox2" layoutX="41.0" layoutY="162.0" prefWidth="150.0" />
+                  <ComboBox fx:id="comboBox1" layoutX="41.0" layoutY="85.0" prefWidth="150.0" />
+                  <ComboBox fx:id="comboBox3" layoutX="41.0" layoutY="243.0" prefWidth="150.0" />
+                  <Button layoutX="106.0" layoutY="296.0" mnemonicParsing="false" onAction="#handle" text="Save Choices" />
+                  <Button layoutX="171.0" layoutY="433.0" mnemonicParsing="false" onAction="#changeToSecondScene" prefHeight="27.0" prefWidth="93.0" text="Next Page" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </AnchorPane>

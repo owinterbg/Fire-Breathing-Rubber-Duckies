@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class MainController {
@@ -21,6 +22,8 @@ public class MainController {
 	private ComboBox<String> comboBox2 = new ComboBox<String>();
 	@FXML
 	private ComboBox<String> comboBox3 = new ComboBox<String>();
+	@FXML
+	private TextField userInput;
 	
 	@FXML
 	public void initialize() {
@@ -36,8 +39,10 @@ public class MainController {
 		String answerBox1 = comboBox1.getValue();
 		String answerBox2 = comboBox2.getValue();
 		String answerBox3 = comboBox3.getValue();
+		String userBudget = userInput.getText();
+		double userBudgetNum = Integer.parseInt(userBudget);
 		
-		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3);
+		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudget);
 		
 		
 	}

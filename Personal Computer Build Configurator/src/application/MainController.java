@@ -28,7 +28,7 @@ public class MainController {
 	
 	@FXML
 	public void initialize() {
-	 	comboBox1.getItems().addAll("Gaming", "workstation");
+	 	comboBox1.getItems().addAll("Gaming", "Workstation");
 	 	comboBox2.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 	 	comboBox3.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 

@@ -36,7 +36,7 @@ public class secondController {
 	@FXML
 	private TextArea TotalPrice;
 	
-	public double budget;
+	public static double budget;
 	
 	
 	
@@ -53,6 +53,15 @@ public class secondController {
 		window.show();
 	}
 	
+	public double getBudget() {
+		return budget;
+	}
+
+	public void setBudget(double budget) {
+		secondController.budget = budget;
+		System.out.println(budget);
+	}
+
 	@FXML
 	public void initialize() throws IOException {}
 	
@@ -63,7 +72,10 @@ public class secondController {
 		Loader.setLocation(getClass().getResource("Main.fxml"));
 		Loader.load();
 		MainController firstCont = Loader.getController();
-		double budget = 1500;
+		//double budget = 1500;
+		System.out.println("TEST BUDGET "+ this.getBudget());
+		System.out.println("TEST BUDGET "+ this.budget);
+
 		
 		String build_type = "gaming";
 		

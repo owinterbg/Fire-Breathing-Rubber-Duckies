@@ -50,6 +50,14 @@ public class MainController {
 		double userBudgetNum = Integer.parseInt(userBudget);
 		userBudgetGlobal = userBudget;
 		
+		
+		FXMLLoader Loader = new FXMLLoader();
+		Loader.setLocation(getClass().getResource("secondScene.fxml"));
+		Loader.load();
+		secondController secCont = Loader.getController();
+		
+		secCont.setBudget(userBudgetNum);
+		
 		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudgetGlobal+ "\n");
 		
 	}

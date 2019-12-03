@@ -79,7 +79,7 @@ public class secondController /*implements Initializable*/{
 	public void displayInformation(ActionEvent event) throws IOException
 	{
 		double budget = 1500;
-		String build_type = "gaming";
+		String build_type = "workstation";
 		//System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
 		
 		Inventory inventory = new Inventory();

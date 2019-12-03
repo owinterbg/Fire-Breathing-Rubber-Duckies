@@ -67,19 +67,27 @@ public class secondController /*implements Initializable*/{
 	
 	
 		
-	public void getBudget(String userBudgetGlobal) {
-		System.out.println("This happened now------------");
-		this.budget = Double.parseDouble(userBudgetGlobal);
-		System.out.println("input: "+ userBudgetGlobal+ "\n Budget: "+ budget+ "\n");
-		
-		
-	}
+//	public void getBudget(String userBudgetGlobal) {
+//		System.out.println("This happened now------------");
+//		this.budget = Double.parseDouble(userBudgetGlobal);
+//		System.out.println("input: "+ userBudgetGlobal+ "\n Budget: "+ budget+ "\n");
+//		
+//		
+//	}
 	
 	@FXML
 	public void displayInformation(ActionEvent event) throws IOException
 	{
+		FXMLLoader Loader = new FXMLLoader();
+		Loader.setLocation(getClass().getResource("Main.fxml"));
+		Loader.load();
+		MainController firstCont = Loader.getController();
+//		System.out.println(firstCont.userBudgetGlobal);
+//		System.out.println(firstCont.sendBudget());
 		double budget = 1500;
-		String build_type = "workstation";
+		
+		//System.out.println(budget);
+		String build_type = "gaming";
 		//System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
 		
 		Inventory inventory = new Inventory();
@@ -114,7 +122,7 @@ public class secondController /*implements Initializable*/{
 		{
 			if(var.getTotal_price() <= budget && build_type.equalsIgnoreCase(var.getBuild_type()))
 				final_build = var;
-			else
+			if(var.getTotal_price() > budget && build_type.equalsIgnoreCase(var.getBuild_type()))
 				break;
 		}
 		CPUOut.setText(final_build.getCpu().toString());

@@ -79,7 +79,14 @@ public class MainController {
 		window.setScene(secondScene);
 		window.show();
 		
+		
+		
 	
+	}
+	
+	public double sendBudget()
+	{
+		return Double.parseDouble(userBudgetGlobal);
 	}
 	
 }

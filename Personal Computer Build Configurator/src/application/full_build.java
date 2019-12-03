@@ -14,7 +14,7 @@ public class full_build {
 		setCount(0);
 	}
 	
-	public void read(String fileIn) throws IOException
+	public void readFile(String fileIn) throws IOException
 	{
 		String fileName = fileIn;
 		File f = new File(fileName);

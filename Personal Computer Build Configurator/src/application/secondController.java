@@ -1,6 +1,7 @@
 package application;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -45,7 +46,41 @@ public class secondController {
 	}
 	
 	@FXML
-	public void initialize() {
+	public void initialize() throws IOException {
+	 	full_build full = new full_build();
+	 	full.readFile("/data");
+	 	completedBuild temp = new completedBuild(full);
+	 	ArrayList<completedBuild> allBuilds = new ArrayList<completedBuild>();
+	 	
+	 	completedBuild build = new completedBuild(full);
+	 	
+	 	for(int i = 0; i < 10; i++)
+	 	{
+	 		build.setCompleted(temp.getCompleteBuild(i, "gaming"));
+	 		build.setTotalPrice();
+	 		allBuilds.add(build);
+	 	}
+	 	for(int i = 0; i < 10; i++)
+	 	{
+	 		build.setCompleted(temp.getCompleteBuild(i, "work station"));
+	 		build.setTotalPrice();
+	 		allBuilds.add(build);
+	 	}
+	 	
+	 	double budget = userBudgetNum;
+	 	
+	 	completedBuild returnThis = new completedBuild(full);
+	 	
+	 	for(completedBuild var : allBuilds)
+	 	{
+	 		if(var.getTotalPrice() < budget)
+	 			returnThis = var;
+	 		else
+	 			break;
+	 	}
+	 	
+	 	ArrayList<Inventory> allPartToDisplay = returnThis.getCompleted();
+	 	
 	 	
 
 

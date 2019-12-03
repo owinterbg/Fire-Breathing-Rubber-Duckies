@@ -52,12 +52,12 @@ public class MainController {
 		
 		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudgetGlobal+ "\n");
 		
-		FXMLLoader Loader = new FXMLLoader();
-		Loader.setLocation(getClass().getResource("secondScene.fxml"));
-		Loader.load();
-		secondController secondCont = Loader.getController();
-		secondCont.num = 200;
-		secondCont.getBudget(userBudgetGlobal);
+//		FXMLLoader Loader = new FXMLLoader();
+//		Loader.setLocation(getClass().getResource("secondScene.fxml"));
+//		Loader.load();
+//		secondController secondCont = Loader.getController();
+//		secondCont.num = 200;
+//		secondCont.getBudget(userBudgetGlobal);
 	}
 	
 	public void changeToSecondScene(ActionEvent event) throws IOException

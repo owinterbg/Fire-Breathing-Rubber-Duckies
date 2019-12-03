@@ -35,9 +35,9 @@ public class secondController /*implements Initializable*/{
 	@FXML
 	private TextArea HDDOut;
 	
-	public double budget;
+	//public double budget;
 	
-	public int num = 1;
+	//public int num = 1;
 	
 	
 	public void changeToFirstScene(ActionEvent event) throws IOException
@@ -57,7 +57,7 @@ public class secondController /*implements Initializable*/{
 	public void initialize() throws IOException {
 		
 		
-		System.out.println("In the init: Budget: "+budget+" \n and the num");
+		//System.out.println("In the init: Budget: "+budget+" \n and the num");
 		
 
 
@@ -74,9 +74,45 @@ public class secondController /*implements Initializable*/{
 	}
 	
 	@FXML
-	public void displayInformation(ActionEvent event)
+	public void displayInformation(ActionEvent event) throws IOException
 	{
-		System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
+		double budget = 1500;
+		//System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
+		
+		Inventory inventory = new Inventory();
+		inventory.readFile("data/data.csv");
+		
+		ArrayList<FullBuild> all_builds = new ArrayList<FullBuild>();
+		
+		CPU cpu = new CPU(0, "", "", 0);
+		RAM ram = new RAM(0, "", "", 0);
+		GraphicsCard graphics = new GraphicsCard(0, "", "", 0);
+		Case case_  = new Case(0, "", "", 0);
+		PowerSupply power = new PowerSupply(0, "", "", 0);
+		Motherboard motherboard = new Motherboard(0, "", "", 0);
+		SSD ssd = new SSD(0, "", "", 0);
+		HDD	hdd = new HDD(0, "", "", 0);
+		
+		FullBuild new_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd);
+		for(int i = 1; i <= 3; i++)
+		{
+			new_build = inventory.getFullBuild(i, "gaming");
+			all_builds.add(new_build);
+			
+		}
+		for(int i = 1; i <= 3; i++)
+		{
+			new_build = inventory.getFullBuild(i, "workstation");
+			all_builds.add(new_build);
+		}
+		
+		FullBuild final_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd);
+		for(FullBuild var: all_builds)
+			if(var.getTotal_price() >= budget)
+				final_build = var;
+			else
+				break;
+		System.out.println(final_build);
 	}
 
 	@Override

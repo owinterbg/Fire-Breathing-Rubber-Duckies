@@ -47,32 +47,18 @@ public class MainController {
 		String answerBox2 = comboBox2.getValue();
 		String answerBox3 = comboBox3.getValue();
 		String userBudget = userInput.getText();
-		//double userBudgetNum = Integer.parseInt(userBudget);
+		double userBudgetNum = Integer.parseInt(userBudget);
 		userBudgetGlobal = userBudget;
 		
 		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudgetGlobal+ "\n");
 		
-//		FXMLLoader Loader = new FXMLLoader();
-//		Loader.setLocation(getClass().getResource("secondScene.fxml"));
-//		Loader.load();
-//		secondController secondCont = Loader.getController();
-//		secondCont.getBudget(userBudgetGlobal);
 	}
 	
 	public void changeToSecondScene(ActionEvent event) throws IOException
 	{
-		
-		
-		
-		
-		//here
 		Parent secondSceneParent = FXMLLoader.load(getClass().getResource("secondScene.fxml"));
 		
 		Scene secondScene = new Scene(secondSceneParent);
-		
-		//secondController secondScene = loader.getController();
-		
-		//secondScene.transferBudget(userBudgetGlobal);
 		
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		

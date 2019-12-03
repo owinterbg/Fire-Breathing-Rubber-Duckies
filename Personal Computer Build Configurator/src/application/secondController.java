@@ -15,9 +15,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-public class secondController /*implements Initializable*/{
+public class secondController {
 	
-	//"CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD"
 	@FXML
 	private TextArea CPUOut;
 	@FXML
@@ -37,7 +36,7 @@ public class secondController /*implements Initializable*/{
 	@FXML
 	private TextArea TotalPrice;
 	
-	//public double budget;
+	public double budget;
 	
 	
 	
@@ -54,26 +53,8 @@ public class secondController /*implements Initializable*/{
 		window.show();
 	}
 	
-	
 	@FXML
-	public void initialize() throws IOException {
-		
-		
-		//System.out.println("In the init: Budget: "+budget+" \n and the num");
-		
-
-
-	}
-	
-	
-		
-//	public void getBudget(String userBudgetGlobal) {
-//		System.out.println("This happened now------------");
-//		this.budget = Double.parseDouble(userBudgetGlobal);
-//		System.out.println("input: "+ userBudgetGlobal+ "\n Budget: "+ budget+ "\n");
-//		
-//		
-//	}
+	public void initialize() throws IOException {}
 	
 	@FXML
 	public void displayInformation(ActionEvent event) throws IOException
@@ -82,13 +63,9 @@ public class secondController /*implements Initializable*/{
 		Loader.setLocation(getClass().getResource("Main.fxml"));
 		Loader.load();
 		MainController firstCont = Loader.getController();
-//		System.out.println(firstCont.userBudgetGlobal);
-//		System.out.println(firstCont.sendBudget());
 		double budget = 1500;
 		
-		//System.out.println(budget);
 		String build_type = "gaming";
-		//System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
 		
 		Inventory inventory = new Inventory();
 		inventory.readFile("data/data.csv");
@@ -136,12 +113,4 @@ public class secondController /*implements Initializable*/{
 		TotalPrice.setText("$" + final_build.getTotal_price());
 
 	}
-
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-
 }

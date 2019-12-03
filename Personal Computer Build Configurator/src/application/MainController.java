@@ -54,19 +54,29 @@ public class MainController {
 	
 	public void changeToSecondScene(ActionEvent event) throws IOException
 	{
+		/*
 		Parent secondSceneParent = FXMLLoader.load(getClass().getResource("secondScene.fxml"));
 		
 		Scene secondScene = new Scene(secondSceneParent);
+		
+		//secondController secondScene = loader.getController();
+		
+		//secondScene.transferBudget(userBudgetGlobal);
 		
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		
 		window.setScene(secondScene);
 		window.show();
+		*/
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("secondScene.fxml"));
+		Parent root = loader.load();
+		
+		secondController scene2Controller = loader.getController();
+		scene2Controller.transferBudget(userBudgetGlobal);
+		Stage stage = new Stage();
+		stage.setScene(new Scene(root));
+		stage.setTitle("Complete Build");
+		stage.show();
 	}
 	
-	public double getBudget()
-	{
-		return userBudgetGlobal;
-	}
-
 }

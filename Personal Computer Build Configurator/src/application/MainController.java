@@ -1,12 +1,6 @@
 package application;
 
 import java.io.IOException;
-import java.util.logging.Logger;
-
-import com.sun.glass.ui.Window.Level;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,7 +28,7 @@ public class MainController {
 	
 	@FXML
 	public void initialize() {
-	 	comboBox1.getItems().addAll("Gaming", "Work");
+	 	comboBox1.getItems().addAll("Gaming", "workstation");
 	 	comboBox2.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 	 	comboBox3.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 
@@ -49,6 +43,7 @@ public class MainController {
 		String userBudget = userInput.getText();
 		double userBudgetNum = Integer.parseInt(userBudget);
 		userBudgetGlobal = userBudget;
+		String build_type = answerBox1;
 		
 		
 		FXMLLoader Loader = new FXMLLoader();
@@ -57,9 +52,7 @@ public class MainController {
 		secondController secCont = Loader.getController();
 		
 		secCont.setBudget(userBudgetNum);
-		
-		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudgetGlobal+ "\n");
-		
+		secCont.setBuild_type(build_type);
 	}
 	
 	public void changeToSecondScene(ActionEvent event) throws IOException
@@ -72,9 +65,6 @@ public class MainController {
 		
 		window.setScene(secondScene);
 		window.show();
-		
-		
-		
 	
 	}
 	

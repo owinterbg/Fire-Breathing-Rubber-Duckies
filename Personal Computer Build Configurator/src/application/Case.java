@@ -1,4 +1,4 @@
-
+package application;
 public class Case {
 	private String discription;                   
 	private double price;                         

@@ -32,7 +32,7 @@ public class secondController {
 	@FXML
 	private TextArea HDDOut;
 	
-	public double budget;
+	private double budget;
 	
 	
 	public void changeToFirstScene(ActionEvent event) throws IOException
@@ -49,53 +49,26 @@ public class secondController {
 	
 	@FXML
 	public void initialize() throws IOException {
-	 	full_build full = new full_build();
-	 	full.readFile("data");
-	 	completedBuild temp = new completedBuild(full);
-	 	ArrayList<completedBuild> allBuilds = new ArrayList<completedBuild>();
-	 	
-	 	completedBuild build = new completedBuild(full);
-	 	
-	 	for(int i = 0; i < 10; i++)
-	 	{
-	 		build.setCompleted(temp.getCompleteBuild(i, "gaming"));
-	 		build.setTotalPrice();
-	 		allBuilds.add(build);
-	 	}
-	 	for(int i = 0; i < 10; i++)
-	 	{
-	 		build.setCompleted(temp.getCompleteBuild(i, "work station"));
-	 		build.setTotalPrice();
-	 		allBuilds.add(build);
-	 	}
-	 	
-	 	//double budget
-	 	
-	 	completedBuild returnThis = new completedBuild(full);
-	 	
-	 	for(completedBuild var : allBuilds)
-	 	{
-	 		if(var.getTotalPrice() < budget)
-	 			returnThis = var;
-	 		else
-	 			break;
-	 	}
-	 	
-	 	ArrayList<Inventory> allPartToDisplay = returnThis.getCompleted();
-	 	
-	 	
+		
+		
+	
+		System.out.print("Budget: "+budget);
 
 
 	}
 	
-	public void transferBudget(double budgetIn)
-	{
-		this.budget = budgetIn;
-	}
+	
+	
+
 	
 	
 	public void displayInformation(ActionEvent event)
 	{
+		
+	}
+
+	public void getBudget(String userBudget) {
+		this.budget = Double.parseDouble(userBudget);
 		
 	}
 	

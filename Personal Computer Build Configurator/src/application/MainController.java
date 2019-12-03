@@ -1,6 +1,9 @@
 package application;
 
 import java.io.IOException;
+import java.util.logging.Logger;
+
+import com.sun.glass.ui.Window.Level;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -26,7 +29,7 @@ public class MainController {
 	@FXML
 	private TextField userInput;
 	
-	public double userBudgetGlobal;
+	public String userBudgetGlobal;
 
 	
 	@FXML
@@ -44,17 +47,24 @@ public class MainController {
 		String answerBox2 = comboBox2.getValue();
 		String answerBox3 = comboBox3.getValue();
 		String userBudget = userInput.getText();
-		double userBudgetNum = Integer.parseInt(userBudget);
-		userBudgetGlobal = userBudgetNum;
+		//double userBudgetNum = Integer.parseInt(userBudget);
+		userBudgetGlobal = userBudget;
 		
-		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudget);
+		System.out.println(answerBox1 + "\n" + answerBox2 + "\n" + answerBox3 + userBudgetGlobal+ "\n");
 		
 		
 	}
 	
 	public void changeToSecondScene(ActionEvent event) throws IOException
 	{
-		/*
+		FXMLLoader Loader = new FXMLLoader();
+		Loader.setLocation(getClass().getResource("secondScene.fxml"));
+		Loader.load();
+		secondController secondCont = Loader.getController();
+		secondCont.getBudget(userBudgetGlobal);
+		
+		
+		//here
 		Parent secondSceneParent = FXMLLoader.load(getClass().getResource("secondScene.fxml"));
 		
 		Scene secondScene = new Scene(secondSceneParent);
@@ -67,16 +77,8 @@ public class MainController {
 		
 		window.setScene(secondScene);
 		window.show();
-		*/
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("secondScene.fxml"));
-		Parent root = loader.load();
 		
-		secondController scene2Controller = loader.getController();
-		scene2Controller.transferBudget(userBudgetGlobal);
-		Stage stage = new Stage();
-		stage.setScene(new Scene(root));
-		stage.setTitle("Complete Build");
-		stage.show();
+	
 	}
 	
 }

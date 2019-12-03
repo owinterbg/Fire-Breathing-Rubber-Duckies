@@ -32,6 +32,8 @@ public class secondController {
 	@FXML
 	private TextArea HDDOut;
 	
+	public double budget;
+	
 	
 	public void changeToFirstScene(ActionEvent event) throws IOException
 	{
@@ -48,7 +50,7 @@ public class secondController {
 	@FXML
 	public void initialize() throws IOException {
 	 	full_build full = new full_build();
-	 	full.readFile("/data");
+	 	full.readFile("data");
 	 	completedBuild temp = new completedBuild(full);
 	 	ArrayList<completedBuild> allBuilds = new ArrayList<completedBuild>();
 	 	
@@ -67,7 +69,7 @@ public class secondController {
 	 		allBuilds.add(build);
 	 	}
 	 	
-	 	double budget = userBudgetNum;
+	 	//double budget
 	 	
 	 	completedBuild returnThis = new completedBuild(full);
 	 	
@@ -84,6 +86,11 @@ public class secondController {
 	 	
 
 
+	}
+	
+	public void transferBudget(double budgetIn)
+	{
+		this.budget = budgetIn;
 	}
 	
 	

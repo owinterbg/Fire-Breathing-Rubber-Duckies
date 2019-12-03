@@ -40,7 +40,7 @@ public class Motherboard {
 	} 
 	
 	public String toString() {
-		String return_this = "Motherboard:\n\t\tDiscription:\t" + discription + "\n\t\tPrice:\t" + price;
+		String return_this = "Discription:\t" + discription + "\nPrice:\t" + price;
 		
 		return return_this;
 	}

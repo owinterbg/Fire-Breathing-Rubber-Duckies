@@ -190,7 +190,7 @@ public class Inventory {
 				hdd = var;
 		}
 		
-		FullBuild return_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd);
+		FullBuild return_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd, cpu.getBuild_type());
 		
 		return return_build;
 	}

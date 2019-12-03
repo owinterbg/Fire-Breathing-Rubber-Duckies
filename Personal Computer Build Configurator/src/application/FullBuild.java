@@ -12,8 +12,17 @@ public class FullBuild {
 	private SSD ssd;
 	private HDD	hdd;
 	private double total_price;
+	private String build_type;
 	
 	//getters and setters
+	public String getBuild_type() {
+		return build_type;
+	}
+
+	public void setBuild_type(String build_type) {
+		this.build_type = build_type;
+	}
+	
 	public CPU getCpu() {
 		return cpu;
 	}
@@ -86,7 +95,7 @@ public class FullBuild {
 		this.total_price = total_price;
 	}
 
-	public FullBuild(CPU cpu, RAM ram, GraphicsCard graphics, Case case_, PowerSupply power, Motherboard motherboard, SSD ssd, HDD hdd)
+	public FullBuild(CPU cpu, RAM ram, GraphicsCard graphics, Case case_, PowerSupply power, Motherboard motherboard, SSD ssd, HDD hdd, String build_type)
 	{
 		this.cpu = cpu;
 		this.ram = ram;
@@ -98,6 +107,8 @@ public class FullBuild {
 		this.hdd = hdd;
 		
 		this.total_price = calcTotalPrice();
+		
+		this.build_type = build_type;
 	}
 
 	private double calcTotalPrice() {

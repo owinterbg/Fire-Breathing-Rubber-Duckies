@@ -34,6 +34,8 @@ public class secondController /*implements Initializable*/{
 	private TextArea SSDOut;
 	@FXML
 	private TextArea HDDOut;
+	@FXML
+	private TextArea TotalPrice;
 	
 	//public double budget;
 	
@@ -77,6 +79,7 @@ public class secondController /*implements Initializable*/{
 	public void displayInformation(ActionEvent event) throws IOException
 	{
 		double budget = 1500;
+		String build_type = "gaming";
 		//System.out.println("INMETHODBudget: "+ budget+"\nDisplayed: "+ num);
 		
 		Inventory inventory = new Inventory();
@@ -93,7 +96,7 @@ public class secondController /*implements Initializable*/{
 		SSD ssd = new SSD(0, "", "", 0);
 		HDD	hdd = new HDD(0, "", "", 0);
 		
-		FullBuild new_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd);
+		FullBuild new_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd, "");
 		for(int i = 1; i <= 3; i++)
 		{
 			new_build = inventory.getFullBuild(i, "gaming");
@@ -106,13 +109,31 @@ public class secondController /*implements Initializable*/{
 			all_builds.add(new_build);
 		}
 		
-		FullBuild final_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd);
+		FullBuild final_build = new FullBuild(cpu, ram, graphics, case_, power, motherboard, ssd, hdd, "");
 		for(FullBuild var: all_builds)
-			if(var.getTotal_price() >= budget)
+		{
+			if(var.getTotal_price() <= budget && build_type.equalsIgnoreCase(var.getBuild_type()))
 				final_build = var;
 			else
 				break;
-		System.out.println(final_build);
+		}
+		CPUOut.setText(final_build.getCpu().toString());
+		RAMOut.setText(final_build.getRam().toString());
+		graphicsCardOut.setText(final_build.getGraphics().toString());
+		towerCaseOut.setText(final_build.getCase_().toString());
+		powerSupplyOut.setText(final_build.getPower().toString());
+		motherboardOut.setText(final_build.getMotherboard().toString());
+		SSDOut.setText(final_build.getSsd().toString());
+		HDDOut.setText(final_build.getHdd().toString());
+		TotalPrice.setText("$" + final_build.getTotal_price());
+//		System.out.println(final_build.getCpu());
+//		System.out.println(final_build.getRam());
+//		System.out.println(final_build.getGraphics());
+//		System.out.println(final_build.getCase_());
+//		System.out.println(final_build.getPower());
+//		System.out.println(final_build.getMotherboard());
+//		System.out.println(final_build.getSsd());
+//		System.out.println(final_build.getHdd());
 	}
 
 	@Override

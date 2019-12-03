@@ -40,7 +40,7 @@ public class GraphicsCard {
 	}  
 	
 	public String toString() {
-		String return_this = "Graphics Card:\n\t\tDiscription:\t" + discription + "\n\t\tPrice:\t" + price;
+		String return_this = "Discription:\t" + discription + "\nPrice:\t" + price;
 		
 		return return_this;
 	}

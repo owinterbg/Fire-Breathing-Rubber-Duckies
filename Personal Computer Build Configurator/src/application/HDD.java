@@ -40,7 +40,7 @@ public class HDD {
 	}     
 	
 	public String toString() {
-		String return_this = "HDD:\n\t\tDiscription:\t" + discription + "\n\t\tPrice:\t" + price;
+		String return_this = "Discription:\t" + discription + "\nPrice:\t" + price;
 		
 		return return_this;
 	}

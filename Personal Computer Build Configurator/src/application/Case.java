@@ -39,7 +39,7 @@ public class Case {
 	} 
 	
 	public String toString() {
-		String return_this = "Case:\n\t\tDiscription:\t" + discription + "\n\t\tPrice:\t" + price;
+		String return_this = "Discription:\t" + discription + "\nPrice:\t\t" + price;
 		
 		return return_this;
 	}

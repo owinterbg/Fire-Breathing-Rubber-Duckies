@@ -39,7 +39,7 @@ public class secondController /*implements Initializable*/{
 	
 	//public double budget;
 	
-	//public int num = 1;
+	
 	
 	
 	public void changeToFirstScene(ActionEvent event) throws IOException
@@ -70,7 +70,7 @@ public class secondController /*implements Initializable*/{
 	public void getBudget(String userBudgetGlobal) {
 		System.out.println("This happened now------------");
 		this.budget = Double.parseDouble(userBudgetGlobal);
-		System.out.println("input: "+ userBudgetGlobal+ "\n Budget: "+ budget+ "\n"+ num);
+		System.out.println("input: "+ userBudgetGlobal+ "\n Budget: "+ budget+ "\n");
 		
 		
 	}
@@ -126,14 +126,7 @@ public class secondController /*implements Initializable*/{
 		SSDOut.setText(final_build.getSsd().toString());
 		HDDOut.setText(final_build.getHdd().toString());
 		TotalPrice.setText("$" + final_build.getTotal_price());
-//		System.out.println(final_build.getCpu());
-//		System.out.println(final_build.getRam());
-//		System.out.println(final_build.getGraphics());
-//		System.out.println(final_build.getCase_());
-//		System.out.println(final_build.getPower());
-//		System.out.println(final_build.getMotherboard());
-//		System.out.println(final_build.getSsd());
-//		System.out.println(final_build.getHdd());
+
 	}
 
 	@Override

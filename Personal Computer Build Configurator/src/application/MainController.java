@@ -56,7 +56,6 @@ public class MainController {
 //		Loader.setLocation(getClass().getResource("secondScene.fxml"));
 //		Loader.load();
 //		secondController secondCont = Loader.getController();
-//		secondCont.num = 200;
 //		secondCont.getBudget(userBudgetGlobal);
 	}
 	

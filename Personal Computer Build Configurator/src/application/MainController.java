@@ -15,16 +15,24 @@ import javafx.stage.Stage;
 public class MainController {
 	
 	@FXML	
-	private ComboBox<String> comboBox1 = new ComboBox<String>();
+	private ComboBox<String> comboBox1 = new ComboBox<String>(); //combo box for first selection
 	@FXML
-	private ComboBox<String> comboBox2 = new ComboBox<String>();
+	private ComboBox<String> comboBox2 = new ComboBox<String>(); // combo box for second selection
 	@FXML
-	private ComboBox<String> comboBox3 = new ComboBox<String>();
+	private ComboBox<String> comboBox3 = new ComboBox<String>(); // combo box for third selection
 	@FXML
-	private TextField userInput;
+	private TextField userInput; // user imput for budget
 	
-	public String userBudgetGlobal;
+	public String userBudgetGlobal; //global variable for budget
 
+	
+	/*
+	 * public void initialize()
+	 * Initializes the combo boxes in the main scene
+	 * Return:
+	 * 	void
+	 */
+	
 	
 	@FXML
 	public void initialize() {
@@ -33,6 +41,15 @@ public class MainController {
 	 	comboBox3.getItems().addAll("CPU", "RAM", "Graphics Card", "Tower Case", "Power Supply", "Motherboard", "SSD", "HDD");
 
 	}
+	
+	/*
+	 * public void handle(ActionEvent handle) throws IOException
+	 * Handle button for saving results from user and passing budget 
+	 * Var In:
+	 * 	ActionEvent handle	fxml button handle
+	 * Return:
+	 * 	void
+	 */
 
 	
 	public void handle(ActionEvent handle) throws IOException
@@ -55,6 +72,15 @@ public class MainController {
 		secCont.setBuild_type(build_type);
 	}
 	
+	/*
+	 * 	public void changeToSecondScene(ActionEvent event) throws IOException
+	 * changes the scene 
+	 * Var In: 
+	 * 	ActionEvent event	fxml event button
+	 * Return:
+	 * 	void
+	 */
+	
 	public void changeToSecondScene(ActionEvent event) throws IOException
 	{
 		Parent secondSceneParent = FXMLLoader.load(getClass().getResource("secondScene.fxml"));
@@ -67,6 +93,8 @@ public class MainController {
 		window.show();
 	
 	}
+	
+	//not used
 	
 	public double sendBudget()
 	{

@@ -12,7 +12,7 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 public class secondController {
-	
+	//these are all text areas for the TextAreas
 	@FXML
 	private TextArea CPUOut;
 	@FXML
@@ -32,25 +32,67 @@ public class secondController {
 	@FXML
 	private TextArea TotalPrice;
 	
-	public static double budget;
+	public static double budget; //global budget variable
 	
-	public static String build_type;
+	public static String build_type; //global build type 
 	
+	
+	
+	/*
+	 * public String getBuild_type()
+	 * returns build type
+	 * Return:
+	 * 	String build_type
+	 */
 	public String getBuild_type() {
 		return build_type;
 	}
+	
+	/*
+	 * public void setBuild_type(String build_type)
+	 * sets the build type 
+	 * Var In: 
+	 * 	String build_type	type of PC build
+	 * Return: 
+	 * 	void 
+	 */
 
 	public void setBuild_type(String build_type) {
 		secondController.build_type = build_type;
 	}
 	
+	/*
+	 * public double getBudget()
+	 * returns budget
+	 * Return:
+	 * 	double budget 
+	 */
+	
 	public double getBudget() {
 		return budget;
 	}
+	
+	/*
+	 * public void setBudget(double budget)
+	 * sets the budget
+	 * Var In:
+	 * 	double budget	number value for budget
+	 * Return:
+	 * 	void
+	 */
 
 	public void setBudget(double budget) {
 		secondController.budget = budget;
 	}
+	
+	/*
+	 * 	public void changeToFirstScene(ActionEvent event) throws IOException
+	 * changes from second scene back to first scene
+	 * Var In:
+	 * 	ActionEvent event	button fxml
+	 * Return:
+	 * 	void
+	 */
 
 	public void changeToFirstScene(ActionEvent event) throws IOException
 	{
@@ -65,7 +107,16 @@ public class secondController {
 	}
 
 	@FXML
-	public void initialize() throws IOException {}
+	public void initialize() throws IOException {} //initializing method
+	
+	/*
+	 * 	public void displayInformation(ActionEvent event) throws IOException
+	 *  linked to a button that displays information on the screen
+	 *  Var In:
+	 *  	ActionEvent event 	fxml button control
+	 *  Return:
+	 *  	void 
+	 */
 	
 	@FXML
 	public void displayInformation(ActionEvent event) throws IOException

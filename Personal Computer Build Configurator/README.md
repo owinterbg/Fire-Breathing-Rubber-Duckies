@@ -66,13 +66,16 @@ Click the *Show My Computer!!!* button to populate the screen with the personali
 
 **A:** We actually use a very popular website called [PCPartPicker](https://pcpartpicker.com/), where you can view virtually an unlimited number of parts for your PC. We scrape the information from that website, and have it locally stored in a database which the app uses.
 
+
 **Q:** Why not just use a reputable website like PCPartPicker?
 
 **A:** A website like PCPartPicker is a very good choice to allow you to build your own PC, but the problem lies within all the choices that it provides you, which is where our app comes in.
 
+
 **Q:** Why should I use this app? 
 
 **A:**  Within just a few clicks, our app provides the user with a completed build that is created from a handcrafted database of optimized builds.
+
 
 **Q:** I purchased the parts that your app told me to get, but how  do I put a PC together? 
 

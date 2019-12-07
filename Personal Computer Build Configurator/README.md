@@ -10,14 +10,14 @@ PC Build Configurator is an app that provides the user with an optimized list of
  - Eclispe IDE (or other preferred IDE)
  - Git (optional)
 ## Installation
-
- You need to install [JDK 1.8+](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) which has JavaFX built into it. You also need an IDE, preferably Eclipse, which you can download [here](https://www.eclipse.org/downloads/). You can visit [this](http://www.cs.utsa.edu/~cs3443/javafx/index.html) website for further instructions on how to get JavaFX to work on Eclipse. To download our code you can simply go to the [main page](https://github.com/owinterbg/Fire-Breathing-Rubber-Duckies), and click the *Download Zip* option or you can open up a terminal and type in the following command:
+You need to install [JDK 1.8+](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) which has JavaFX built into it. You also need an IDE, preferably Eclipse, which you can download [here](https://www.eclipse.org/downloads/). You can visit this [website](http://www.cs.utsa.edu/~cs3443/javafx/index.html) for further instructions on how to get JavaFX to work on Eclipse. To download our code you can simply go to the [main page](https://github.com/owinterbg/Fire-Breathing-Rubber-Duckies), and click the *Download Zip* option or you can open up a terminal and type in the following command:
  ```bash
  git clone https://github.com/owinterbg/Fire-Breathing-Rubber-Duckies
 ```
 
 ## Usage
-open up the project in Eclipse, or in preferred IDE, and click *run*. On the main screen, you will be prompted for a few things.
+Open up the project in Eclipse, or in preferred IDE, and click *run*. 
+On the main screen, you will be prompted for a few things.
 
 **Step 1**
 Choose your desired intention for the computer, whether it be for gaming or for workstation purposes.
@@ -41,17 +41,24 @@ Select the part that you want to put the LEAST priority to. This will only decre
 </p>
 
 **Step 4**
-Click the *Next Page* button to go to the next screen for the list of parts.
+Enter the desired budget for your PC in the text box.
 
 <p align="center">
   <img width="350" height="500" src="images/5.png?raw=true">
 </p>
 
 **Step 5**
-Click the *Show My Computer!!!* button to populate the screen with the personalized part list.
+Click the *Next Page* button to go to the next screen for the list of parts.
 
 <p align="center">
   <img width="350" height="500" src="images/6.png?raw=true">
+</p>
+
+**Step 6**
+Click the *Show My Computer!!!* button to populate the screen with the personalized part list.
+
+<p align="center">
+  <img width="350" height="500" src="images/7.png?raw=true">
 </p>
 
 ## FAQ
@@ -68,7 +75,7 @@ Click the *Show My Computer!!!* button to populate the screen with the personali
 **A:** We totally understand that putting a PC together, looks as hard as flying to the moon but its actually quite simple. For some tutorials on how to put together a PC check out any of these links:
 
 Note that these are three separate tutorials, meaning that any one of them will be sufficient enough to build your PC. 
-- [Tutorial 1](https://www.youtube.com/watch?v=IhX0fOUYd8Q&t=1716s) - 
+- [Tutorial 1](https://www.youtube.com/watch?v=IhX0fOUYd8Q&t=1716s)
 - [Tutorial 2](https://www.youtube.com/watch?v=gO-V8E9MIBg)
 - [Tutorial 3](https://www.youtube.com/watch?v=MfwjISmkEJM&t=123s)
 

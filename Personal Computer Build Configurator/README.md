@@ -37,21 +37,21 @@ Select the part, in which you want to put priority too. If you chose a gaming PC
 Select the part that you want to put the LEAST priority to. This will only decrease the priority of the selected part, meaning it will not make a drastic difference.
 
 <p align="center">
-  <img width="350" height="500" src="images/4.PNG?raw=true">
+  <img width="350" height="500" src="images/4.png?raw=true">
 </p>
 
 **Step 4**
 Click the *Next Page* button to go to the next screen for the list of parts.
 
 <p align="center">
-  <img width="350" height="500" src="images/5.PNG?raw=true">
+  <img width="350" height="500" src="images/5.png?raw=true">
 </p>
 
 **Step 5**
 Click the *Show My Computer!!!* button to populate the screen with the personalized part list.
 
 <p align="center">
-  <img width="350" height="500" src="images/6.PNG?raw=true">
+  <img width="350" height="500" src="images/6.png?raw=true">
 </p>
 
 ## FAQ

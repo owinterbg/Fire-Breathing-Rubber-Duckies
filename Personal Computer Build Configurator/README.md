@@ -1,7 +1,9 @@
 # PC Build Configurator
 PC Build Configurator is an app that provides the user with an optimized list of all necessary parts to build a PC. The motto of the app is *minimalism at its finest* for the end user. With that in mind, we streamlined the process by providing a set of 3 choices with predetermined options for each and also a text box for the user to enter the maximum desired budget. For advice on how to put together your PC from your bought parts, see the given answer in the FAQ's section.
 
-![](images/1.PNG?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/1.PNG?raw=true">
+</p>
 
 ## Requirements
  - JDK 1.8+
@@ -20,27 +22,37 @@ open up the project in Eclipse, or in preferred IDE, and click *run*. On the mai
 **Step 1**
 Choose your desired intention for the computer, whether it be for gaming or for workstation purposes.
 
-![](images/2.PNG?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/2.PNG?raw=true">
+</p>
 
  **Step 2**
 Select the part, in which you want to put priority too. If you chose a gaming PC it is preferred to give priority to the Graphics Card, and conversely if you chose a workstation PC it is preffered to go give priority to the CPU. For default settings, leave it blank. 
 
-![](images/3.PNG?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/3.PNG?raw=true">
+</p>
 
 **Step 3**
 Select the part that you want to put the LEAST priority to. This will only decrease the priority of the selected part, meaning it will not make a drastic difference.
 
-![](images/4.png?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/4.PNG?raw=true">
+</p>
 
 **Step 4**
 Click the *Next Page* button to go to the next screen for the list of parts.
 
-![](images/5.png?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/5.PNG?raw=true">
+</p>
 
 **Step 5**
 Click the *Show My Computer!!!* button to populate the screen with the personalized part list.
 
-![](images/6.png?raw=true)
+<p align="center">
+  <img width="350" height="500" src="images/6.PNG?raw=true">
+</p>
 
 ## FAQ
 **Q:** Where do you get the information for the parts that were provided to me in your app?

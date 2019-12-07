@@ -1,3 +1,10 @@
+/**
+* Gets the information from database (csv file)
+* and stores it in variables to be used
+* when displaying the Motherboard information
+* to the user.
+*/
+
 package application;
 
 public class Motherboard {

@@ -68,9 +68,9 @@ Click the *Show My Computer!!!* button to populate the screen with the personali
 **A:** We totally understand that putting a PC together, looks as hard as flying to the moon but its actually quite simple. For some tutorials on how to put together a PC check out any of these links:
 
 Note that these are three separate tutorials, meaning that any one of them will be sufficient enough to build your PC. 
-[Tutorial 1](https://www.youtube.com/watch?v=IhX0fOUYd8Q&t=1716s)
-[Tutorial 2](https://www.youtube.com/watch?v=gO-V8E9MIBg)
-[Tutorial 3](https://www.youtube.com/watch?v=MfwjISmkEJM&t=123s)
+- [Tutorial 1](https://www.youtube.com/watch?v=IhX0fOUYd8Q&t=1716s) - 
+- [Tutorial 2](https://www.youtube.com/watch?v=gO-V8E9MIBg)
+- [Tutorial 3](https://www.youtube.com/watch?v=MfwjISmkEJM&t=123s)
 
 
 For some general tips on building a PC, check out this [website](https://www.redbull.com/gb-en/pc-building-tips-guide). If you have any further questions you can ask for help on [reddit](https://www.reddit.com/r/buildapc/).

@@ -1,3 +1,9 @@
+  /**
+   * Gets the information from database (csv file)
+   * and stores it in variables to be used
+   * when displaying the case information to 
+   * the user.
+   */
 package application;
 public class Case {
 	private String discription;                   
